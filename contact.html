@@ -1,285 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - AI Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact | Antigravity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">AI Developer</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link active">Contact</a></li>
-            </ul>
+    <div class="blob blob-2"></div>
+
+    <section class="container">
+        <h2 class="section-title">Get In Touch</h2>
+
+        <div class="form-container">
+            <p style="text-align: center; margin-bottom: 2rem; color: var(--text-secondary);">
+                Have a project in mind or just want to say hi? <br>Fill out the form below and I'll get back to you.
+            </p>
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="your@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" placeholder="Tell me about your project..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
-    </nav>
-
-    <main class="page-content">
-        <section class="content-section">
-            <h2>Get In Touch</h2>
-            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem;">Have a project in mind? Let's collaborate and create something amazing together!</p>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="info-item">
-                        <div class="info-icon">📧</div>
-                        <div class="info-text">
-                            <h4>Email</h4>
-                            <p>your-email@example.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">📱</div>
-                        <div class="info-text">
-                            <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">📍</div>
-                        <div class="info-text">
-                            <h4>Location</h4>
-                            <p>San Francisco, CA</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">💼</div>
-                        <div class="info-text">
-                            <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/yourprofile</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">💻</div>
-                        <div class="info-text">
-                            <h4>GitHub</h4>
-                            <p>github.com/yourprofile</p>
-                        </div>
-                    </div>
-                </div>
-
-                <form class="contact-form" id="contactForm">
-                    <h3>Send me a message</h3>
-                    <div class="form-group">
-                        <label for="name">Your Name *</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email *</label>
-                        <input type="email" id="email" name="email" required placeholder="john@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Project Collaboration">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2>Let's Connect</h2>
-            <div class="social-links">
-                <a href="#" class="social-card" style="background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));">
-                    <div class="social-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p>Connect professionally</p>
-                </a>
-                <a href="#" class="social-card" style="background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-peach));">
-                    <div class="social-icon">💻</div>
-                    <h3>GitHub</h3>
-                    <p>Check out my code</p>
-                </a>
-                <a href="#" class="social-card" style="background: linear-gradient(135deg, var(--pastel-mint), var(--pastel-blue));">
-                    <div class="social-icon">🐦</div>
-                    <h3>Twitter</h3>
-                    <p>Follow my journey</p>
-                </a>
-                <a href="#" class="social-card" style="background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-lavender));">
-                    <div class="social-icon">📚</div>
-                    <h3>Medium</h3>
-                    <p>Read my articles</p>
-                </a>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2>Availability</h2>
-            <div class="availability-info">
-                <div class="availability-card">
-                    <div class="status-indicator available"></div>
-                    <h3>Available for Projects</h3>
-                    <p>I'm currently accepting new freelance projects and consulting opportunities. Let's discuss how I can help bring your AI vision to life.</p>
-                </div>
-                <div class="availability-card">
-                    <div class="status-indicator"></div>
-                    <h3>Response Time</h3>
-                    <p>I typically respond to inquiries within 24-48 hours. For urgent matters, please mention it in your message.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 AI Developer Portfolio. All rights reserved.</p>
-    </footer>
+    </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>
-
-<style>
-.contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 3rem;
-    margin-top: 2rem;
-}
-
-.contact-info {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info h3 {
-    color: var(--dark-text);
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.info-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.info-item:hover {
-    transform: translateX(10px);
-    background: rgba(255, 255, 255, 1);
-}
-
-.info-icon {
-    font-size: 2rem;
-    min-width: 40px;
-}
-
-.info-text h4 {
-    color: var(--dark-text);
-    margin-bottom: 0.3rem;
-}
-
-.info-text p {
-    color: #666;
-}
-
-.contact-form h3 {
-    color: var(--dark-text);
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.social-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.social-card {
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.social-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-}
-
-.social-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.social-card h3 {
-    margin-bottom: 0.5rem;
-}
-
-.social-card p {
-    font-size: 0.9rem;
-    opacity: 0.9;
-}
-
-.availability-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.availability-card {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.status-indicator {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #ffcc00;
-    display: inline-block;
-    margin-right: 0.5rem;
-    animation: pulse 2s ease-in-out infinite;
-}
-
-.status-indicator.available {
-    background: #4CAF50;
-}
-
-.availability-card h3 {
-    color: var(--dark-text);
-    margin-bottom: 1rem;
-    display: inline-flex;
-    align-items: center;
-}
-
-@keyframes pulse {
-    0%, 100% {
-        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
-    }
-    50% {
-        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
-    }
-}
-
-@media (max-width: 768px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
